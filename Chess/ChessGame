@@ -1,0 +1,21 @@
+from board import *
+from queue import Queue
+
+class ChessGame:
+    def __init__(self):
+        self.board = Board(8, 8)
+        self.board.initialize()
+        self.players = [PieceColor.BLACK, PieceColor.WHITE]
+
+    def startGame():
+        pass
+
+    def makeMove(self, start, end)  -> bool:
+        pass
+
+    def switchPlay(self, start, end) -> None:
+        pass
+
+    def checkMovesLeft(self) -> bool:
+        pass
+

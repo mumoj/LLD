@@ -1,0 +1,32 @@
+import uuid
+from enum import Enum
+from typing import Optional, Dict
+
+
+class SlotState(Enum):
+    READY = 1
+    SELECTPRODUCT = 2
+    DISPENSING = 3
+
+
+class Slot:
+    def __init__(self):
+        self.slotId = uuid.uuid4()
+        self.state = SlotState
+        self.insertedMoney: Optional[Dict[int, int]] = None
+
+    def acceptMoney(self, denoms):
+        self.insertedMoney =  denoms
+        self.state = SlotState.SELECTPRODUCT
+        return True
+    
+    def dispense(productId,change):
+        pass
+
+
+
+    
+    
+    
+
+

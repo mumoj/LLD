@@ -1,0 +1,9 @@
+from  enum import Enum
+
+class VehicleType(Enum):
+    CAR = "Car"
+    BIKE = "Bike"
+    TRUCK = "Truck"
+    
+    
+print(VehicleType.CAR)
